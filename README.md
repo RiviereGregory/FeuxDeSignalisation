@@ -80,7 +80,7 @@ Dès que le 4ᵉ appui active $Q_4$, le composant se réinitialise instantanéme
 ![Schéma de Câblage](docs/images/cablage-breadboard.png)
 
 ### Schéma PCB  
-TODO  
+![Schéma PCB](docs/images/pcb.png)  
 
 ---
 

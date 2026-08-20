@@ -1,0 +1,95 @@
+(3_detourage)
+(T3 D=2 CR=0.75 - ZMIN=-1.7 - bullnose end mill)
+G90 G94
+G17
+G21
+(When using Fusion for Personal Use, the feedrate of rapid)
+(moves is reduced to match the feedrate of cutting moves,)
+(which can increase machining time. Unrestricted rapid moves)
+(are available with a Fusion Subscription.)
+G28 G91 Z0
+G90
+
+(Contour 2D1)
+T3
+S10000 M3
+G17 G90 G94
+G54
+M8
+G0 X-0.2 Y41.6
+Z15
+G1 Z5 F100
+Z0.4 F40
+Z-1.5
+G19 G2 Y41.4 Z-1.7 J-0.2 K0 F100
+G1 Y41.2
+G17 G3 X0 Y41 I0.2 J0
+G1 X6.583
+Z-0.7
+X10.083
+Z-1.7 F40
+X23.25 F100
+Z-0.7
+X26.75
+Z-1.7 F40
+X39.917 F100
+Z-0.7
+X43.417
+Z-1.7 F40
+X56.583 F100
+Z-0.7
+X60
+X60.083 Y40.997
+Z-1.7 F40
+G2 X61 Y40 I-0.083 J-0.997 F100
+G1 Y26.75
+Z-0.7
+Y23.25
+Z-1.7 F40
+Y10.083 F100
+Z-0.7
+Y6.583
+Z-1.7 F40
+Y0 F100
+G2 X60 Y-1 I-1 J0
+G1 X53.417
+Z-0.7
+X49.917
+Z-1.7 F40
+X36.75 F100
+Z-0.7
+X33.25
+Z-1.7 F40
+X20.083 F100
+Z-0.7
+X16.583
+Z-1.7 F40
+X3.417 F100
+Z-0.7
+X0
+X-0.083 Y-0.997
+Z-1.7 F40
+G2 X-1 Y0 I0.083 J0.997 F100
+G1 Y13.25
+Z-0.7
+Y16.75
+Z-1.7 F40
+Y29.917 F100
+Z-0.7
+Y33.417
+Z-1.7 F40
+Y40 F100
+G2 X0 Y41 I1 J0
+G3 X0.2 Y41.2 I0 J0.2
+G1 Y41.4
+G19 G3 Y41.6 Z-1.5 J0 K0.2
+G1 Z15
+G17
+
+M9
+G28 G91 Z0
+G90
+G28 G91 X0 Y0
+G90
+M5
+M30
